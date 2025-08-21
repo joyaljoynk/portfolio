@@ -129,6 +129,7 @@ body {
   border: 4px solid rgb(255, 121, 4);
   box-shadow: 0 0 20px rgba(255, 121, 4, 0.6);
   transition: transform 0.4s ease;
+  animation: fadeInDown 3.2s ease-in-out;
 }
 .about-section {
   display: flex;
@@ -141,6 +142,11 @@ body {
   background: #0d0d0d;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(255, 121, 4, 0.3);
+  animation: fadeOut 3.2s ease-out-in;
+  animation-timeline: view();
+  animation-range: exit 0% 30%;
+}
+.about-right {
   animation: fadeOut 3.2s ease-out-in;
   animation-timeline: view();
   animation-range: exit 0% 30%;
