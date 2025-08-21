@@ -12,7 +12,7 @@ export default function Main() {
       />
     </div>
     <div className="about-right">
-      <h1 className="he">Aspiring MERN Stack Developer & Cybersecurity Explorer</h1>
+      <h1 className="his">Aspiring MERN Stack Developer & Cybersecurity Explorer</h1>
       <p className="j">
         I am a Computer Science Engineer with a strong desire to grow in cybersecurity and MERN stack. 
         I enjoy solving technical challenges, building scalable applications, and exploring the intersection 
