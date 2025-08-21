@@ -145,6 +145,7 @@ body {
   animation: fadeOut 3.2s ease-out-in;
   animation-timeline: view();
   animation-range: exit 0% 30%;
+  
 }
 .about-right {
   animation: fadeOut 3.2s ease-out-in;
@@ -265,27 +266,36 @@ body {
   animation-range: entry 0 cover 50%;
 }
 .skills-section {
-  display: flex;               /* Make it flexbox */
-  justify-content: space-between;
-  align-items: center;      /* Align from top */
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* two equal columns */
   max-width: 1100px;
   margin: 80px auto;
   padding: 40px;
   background: #0d0d0d;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(255, 121, 4, 0.3);
-  gap: 40px; /* space between columns */
+  gap: 40px;
 }
 
+.skills-section h1 {
+  grid-column: 1 / -1;   /* span across both columns */
+  text-align: center;    /* center text */
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(255, 121, 4);
+  text-shadow: 0 0 10px #ffae00;
+}
 .skills-column {
-  flex: 1; /* each takes equal width */
+  flex: 1;             /* take equal space */
+  min-width: 300px;    /* prevents too narrow */
 }
-.skill-colums{
-  
-  flex-direction: column;
-  gap: 20px; /* space between skills */
-  align-self :baseline;
+.skills-column ul {
+  padding-left: 20px;   /* indent list nicely */
+  list-style-type: square; /* custom bullet style */
 }
+
 .heh{
    font-size: 2.4rem;
   font-weight: bold;
@@ -299,16 +309,17 @@ body {
   text-decoration: underline;
   text-decoration-color: #ffffff; 
 }
-.tech{
+.tech {
+  font-size: 1.2rem;
+  font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: #ff8c00; 
-  animation: fadeInDown 3.2s ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 50%;
+  text-decoration-color: #ff8c00;
+  margin-bottom: 15px;
 }
 
+
 .his {
-  font-size: large;
+  
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
